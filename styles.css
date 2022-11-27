@@ -1,0 +1,783 @@
+
+html {box-sizing: border-box;}
+body {
+    background-color: rgb(184, 184, 184);
+    overflow-x: hidden;
+}
+body, ul, li, h2, h1, a {
+margin: 0px;
+padding: 0px;
+font-family: "roboto slab";
+}
+
+
+main{
+    max-width: 100%;
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 0px 40px;
+    box-sizing: border-box;
+}
+h2{
+    font-size: 20px;
+    padding: 15px;
+}
+h3{
+    font-size: 17px;
+}
+main h1 {font-size: 30px; padding: 10px 20px;
+    text-align: left;
+}
+
+
+header {
+    background-color: rgb(54, 54, 54);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    padding: 8px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#backtoindex{
+    text-decoration: none;
+    color: rgb(250, 64, 64);
+    font-family: "roboto slab";
+    font-size: 70px;
+}
+
+
+.schnellkontakt li{
+    display: block;
+    margin-right:2em;
+  
+}
+.schnellkontakt li a{
+    font-size: 30px;
+    color: lightgray;
+    text-decoration: none;
+}
+
+.material-icons{
+    padding: 4px;
+    font-size: 30px;
+    color:lightgray;
+}
+header .schnellkontakt .box{
+    display: flex;
+    justify-content: center;
+}
+.box div{
+    height: 100px;
+    width: auto;
+}
+
+p {
+    color: black;
+    text-align: left;
+    line-height: 22px;
+}
+
+
+.banner{
+position: relative;
+width: 100%;
+height: auto;
+}
+
+.banner img {
+    width: 100%;
+    white-space: nowrap;
+
+}
+.banner .start {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    color: rgb(252, 34, 34);
+}
+.banner h2 {
+    font-size: 200%;
+    font-family: "roboto slab";
+    text-align: left;
+}
+.banner h2 span {
+    font-size: 1.3em;
+    text-align: left;
+}
+
+.main-nav{
+    width: 100%;
+    background-color: rgb(54, 54, 54);
+    padding:0px 15px;
+    overflow:hidden;
+    position: sticky;
+    z-index: 1;
+    top:110px;
+    margin: -4px 0px;
+    display:flex;
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+.main-nav ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.main-nav li{
+width: 20%;
+padding: 0px 1.7em;
+font-size: 20px;
+list-style: none;
+display: flex;
+justify-content: space-around;
+
+}
+.main-nav li a {
+text-decoration: none;
+font-family: "roboto slab";
+color:rgb(250, 64, 64) ;
+padding:1rem;
+box-sizing: border-box;
+}
+
+.main-nav li a:active, .main-nav li a:hover{
+    background-color: rgb(184, 184, 184);
+    color:rgb(54, 54, 54);
+    transition: .5s;
+} 
+.nav-toggle{
+    display: none;
+}
+.nav-toggle-label{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    height: 21px;
+    padding: 5px 0px;
+    position: sticky;
+    top:56px;
+    background-color: rgb(54, 54, 54);
+    margin: 30px 0px 0px 0px;
+    }
+
+
+.nav-toggle-label .bar{
+    height: 3px;
+    width: 8%;
+    background-color: rgb(250, 64, 64);
+}
+.nav-toggle:checked ~ nav{
+    display: block;
+}
+
+.imagesstart {
+    text-align: center; 
+    margin: 80px 0;
+    white-space: nowrap;
+}
+
+.imagesstart li {
+display: inline-block;
+width: 25%;
+margin: 20px 5%;
+}
+.imagesstart li img {
+max-width: 100%;
+}
+
+.kontakt-bild{
+   width: 100%;
+   max-height: 100%;
+}
+img.Start{
+    width: 100%;
+    height: auto;
+}
+main .main-kontakt{
+    display: inline-block;
+}
+.kontakt-überschrift{
+    padding: 30px;
+    font-size: 40px;
+}
+.formular {
+    display: inline-block;
+    width: 45%;
+    padding: 30px;
+}
+.kontaktdaten{
+    padding-top:30px;
+    font-size: 25px;
+    line-height: 2em;
+    }
+.kontaktdaten span {
+    font-size: 40px;
+}
+
+form input {
+    margin: 10px 0px;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 2px;
+    border: 4px solid lightgray;
+    width: 37%;
+}
+
+
+form label {
+    font-size: 24px;
+    padding: 0px 30px;
+    
+}
+
+
+form textarea {
+    font-size: 24px;
+    width: 90%;
+    box-sizing: border-box;
+    resize: vertical;
+    padding: 10px 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 15px 20px;
+    border: 4px solid lightgrey}
+
+#send{
+    position: relative;
+    width: 70%;
+    left: 20px;
+}
+#map{
+margin-left: 0px;
+float: center;
+height: 300px;
+width: auto;
+border: 4px solid lightgray;
+}
+.wrapper{
+    display: block;
+    width: 45%;
+    float: right;
+    right: 20px;
+    top: 100px;
+}
+#tonav{display: none;}
+
+footer{
+    display: block;
+    text-align: center;
+    width: 100%;
+   }
+
+.copyright {
+    text-align: center;
+    padding: 20px;
+}
+   
+.impressum{
+    font-size: 15px;
+    text-align: center;
+    padding: 20px;
+    
+}
+.impressum a{
+    color: black;
+    text-decoration: none;
+}
+
+.placeholder-impressum{
+    height: 100px;
+    width: 100%;
+}
+.impressum-text{
+    max-width: 100%;
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 0px 40px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+  
+  div.gallery:hover {
+    z-index: 9;
+    transform: scale(1.2);
+    /* linear | ease | ease-in | ease-out | ease-in-out */
+    transition: transform ease 0.5s;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+    height: 500px; /* optional */
+    padding: 10px;
+   
+    /* (C2) COLORS */
+    background:rgb(184, 184, 184);
+   
+    /* (C3) IMAGE RESIZE */
+    /* cover | contain | fill | scale-down */
+    object-fit: contain;
+
+  }
+  
+.innergallery {
+  /* (B1) GRID LAYOUT - 3 IMAGES PER ROW */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+ 
+  /* (B2) OPTIONAL WIDTH RESTRICT */
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* (C) GALLERY IMAGES */
+.innergallery img {
+    /* (C1) DIMENSION */
+    width: 100%;
+    height: 400px; /* optional */
+    padding: 10px;
+   
+    /* (C2) COLORS */
+    background:rgb(184, 184, 184);
+   
+    /* (C3) IMAGE RESIZE */
+    /* cover | contain | fill | scale-down */
+    object-fit: contain;
+    position: relative;
+  }
+
+  /* (E) OPTIONAL ZOOM ON HOVER */
+.innergallery img:hover {
+    z-index: 9;
+    transform: scale(2);
+    /* linear | ease | ease-in | ease-out | ease-in-out */
+    transition: transform ease 0.5s;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  main.references{
+        max-width: 100%;
+        margin: 10px auto;
+        padding: 0px 40px;
+        box-sizing: border-box;
+    }
+  
+  
+  .responsive {
+    padding: 6px;
+    float: left;
+    width: 24%;
+    margin-bottom: 5%;
+}
+
+.footy{
+    position: relative;
+    bottom: 0px;
+}
+
+    h4.auszüge{
+        padding-left: 10px;
+    }
+
+    .referenzen-link{
+       color: rgb(250, 64, 64) ;
+    }
+    .images-business {
+        text-align: center; 
+        margin: 20px 0;
+        white-space: nowrap;
+    }
+    
+    .images-business li {
+    display: inline-block;
+    width: 25%;
+    margin: 0px 5%;
+    }
+    .images-business li img {
+    max-width: 100%;
+    }
+
+    .list-services{
+        max-width: 1000px;
+        padding: 0px 30px ;
+    }
+@media (max-width:1400px){
+    .banner{
+        top:50px;
+        padding: 40px 0px
+    }
+    .kontakt-überschrift{
+        font-size: 30px;
+    }
+    .kontaktdaten{
+        font-size: 20px;
+    }
+    .kontaktdaten span{
+        font-size: 25px;
+    }
+    #map{
+        margin-left: 50px;
+        float: left;
+        height: 250px;
+        width: auto;}
+
+    form label {
+            font-size: 20px;
+            padding: 0px 30px;} 
+
+@media (max-width:1280px){
+    .responsive {
+        padding: 4% 4%;
+        float: left;
+        width: 24%;
+    }
+    div.gallery img {
+            width: 100%;
+            height: auto;
+            height: 300px; /* optional */
+    }
+}
+
+            
+@media (max-width:1250px) {
+    .text-schnellkontakt{
+        font-size: 0px;
+    }
+    .text-schnellkontakt{
+        display:none;
+    }
+    .schnellkontakt li{
+        margin-right:1.5em;
+        display: inline;
+    }
+     #backtoindex{
+            font-size: 40px
+        }
+        #logomini {
+            max-width: 50px;
+        } 
+    .main-nav li{
+        padding: 0rem 1.2em;
+        }
+    .main-nav{
+        top:65px;
+        width: 102%
+    }
+    .banner{
+        top:38px;
+        padding: 30px 0px 0px 0px ;
+        width:102%
+    }
+    form input {
+        margin: 10px 20px;
+        padding: 10px 20px;
+        font-size: 24px;
+        border-radius: 2px;
+        border: 4px solid lightgray;
+        width: 80%;
+    }
+    
+
+    @media (max-width:900px) {
+        .nav-toggle-label{
+            display:flex;
+            width: 102%;
+            top: 68px;
+        }
+        .main-nav li{
+            display:flex;
+            width:100%;
+            align-items: center;
+            margin: 0px -23px;
+        }
+        .main-nav li a:active, .main-nav li a:hover{
+            background-color: rgb(54, 54, 54);
+            color:rgb(184, 184, 184);
+            transition: .5s;}
+
+        .main-nav{
+        display:none;     
+        align-items: flex;
+        top: 98px;
+        width: 102%;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        }
+
+       .main-nav ul{
+         flex-direction:column;
+         text-align: center;
+         display: flex;
+         
+        }
+        .main-nav li a{
+            padding: .5rem 1rem;
+            text-align:center;
+            width: 100%;}
+        .banner h2{
+            font-size: 20px;
+        } 
+        main h2{
+            font-size: 20p;
+        }
+        .responsive {
+            padding: 0 6px;
+            float: left;
+            width: 23%;}
+        
+    @media (max-width:750px) {
+        .main-nav{
+            width: 102%;
+        }
+        .banner{
+            width:102%;}   
+        .main-kontakt{
+            display: block;
+        }
+        .wrapper{
+            width: 100%;
+        }
+        .formular{
+            width: 100%;
+            padding: 0px;
+        }
+        .kontakt-überschrift{
+            font-size: 20px;
+            padding: 5px 0px 10px 5px;
+        }
+        .kontaktdaten span{
+            font-size: 20px;
+        }
+        form textarea{
+            height: 140px;
+            width: 100%;
+            margin: 0px;
+        }
+        form input{
+            margin: 0px;
+            width: 90%;
+        }
+        form label{
+            margin-left: -25px
+        }
+        #map{
+            margin: 0px;
+            padding: 0px;
+            float: center;
+            margin-bottom: 20px;
+            display: none
+        }
+        #tonav{
+            display: block;
+        }
+        .responsive {
+            width: 47%;
+            margin: 6px 0;
+          }
+       
+       }
+       
+    }
+    @media (max-width:600px) {
+        #logomini {
+            max-width: 40px;
+    }
+     #backtoindex{
+         font-size: 30px;
+     }
+        .banner{
+            padding: 20px 0px 0px 0px;
+        }
+        .banner h2{ 
+            font-size: 20px}
+        .banner h2 span{ 
+                font-size: 20px}
+        .nav-toggle-label{
+            top: 55px;
+        }
+        .main-nav{
+            top: 85px;}
+        p{
+            font-size: 0.9rem;
+            line-height: 20px;
+         }
+
+         /* (D) ON SMALL SCREENS - 2 IMAGES PER ROW */
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+        
+    }
+     @media (max-width:550px) {
+        #backtoindex{
+            font-size: 15px;
+        }
+        form label{
+            font-size: 15px;
+            left: 40px
+        }
+        form input{
+            font-size: 15px;
+            margin: 0px;
+        }
+        form textarea{
+            font-size: 15px;
+            margin: 0px 0px;
+            height: 100px;
+        }
+        #send{
+            position: relative;
+            width: 50%;
+            margin-top: 8px;
+        }
+        .kontaktdaten, .kontaktdaten span{
+            font-size: 13px;}
+
+    @media (max-width:500px) {
+
+        #backtoindex{
+            font-size: 20px
+        }
+        #logomini{
+            display:none
+        }
+        .banner h2{
+            text-align: center;
+            font-size: 15px;}
+        .banner h2 span {
+            font-size: 15px;
+        }
+        }
+        .banner .start{
+            top: 40%;
+            left: 8%;
+            right: 10%;}
+        #backtoindex{
+            font-size: 30px;
+        }
+        .banner{
+            top:35px
+        }
+        .copyright,.impressum{
+            font-size: 10px;
+            padding:0px;
+            margin: 0px;
+        }
+        form label{
+            left:-60px
+        }
+        .responsive {
+            width: 100%;
+          }
+        .unsere-stärke{
+            font-size: 13px;
+        }
+        p{
+            font-size: 12px;
+        }
+        li{
+            font-size: 13px;
+        }
+        }
+        
+    @media (max-width:450px){
+        #backtoindex{
+            font-size: 25px;
+        }
+        #schnellkontakt li a{
+            font-size: 20px;
+        }
+        .nav-toggle-label{
+            top: 53px;
+        }
+        .main-nav{
+            top: 83px;
+    }
+    main h1{
+        font-size: 20px;
+        padding: 0px
+    }
+
+    @media (max-width:400px){
+        #backtoindex{
+            font-size: 20px;}
+        #map{
+                width: 100%;
+                margin-bottom:10px;
+                padding: 0px;
+                float: center;
+            height: 200px;
+        }
+        .images-business li {
+            width: 30%;
+            margin: 0px 0.5%;}
+         .imagesstart li {
+                width: 35%;
+                margin: 0px 0.5%;}
+        .imagesstart{
+            margin: 0px
+        }
+        
+    @media (max-width:350px){
+        .material-icons{
+            padding: 0px;
+            font-size: 25px;
+        }
+        .banner{
+            top: 26px
+        }
+        #backtoindex{
+            font-size: 15px;
+        }
+        #backtoindex{
+            font-size: 15px; } 
+        #schnellkontakt{
+            font-size: 15px;
+        } 
+        .nav-toggle-label{
+            top: 46px;
+            margin: 0px;
+        }
+        .main-nav{
+            top: 77px;}
+        .nav-toggle-label .bar{
+                width: 15%
+        }
+        .banner .start {
+            top: 30px;
+        }
+        
+    }
+    @media (max-width:280px){
+        #backtoindex{
+            font-size:12px ;
+        }
+        .banner .start {
+            top: 20px;
+        }
+        .banner h2{
+            font-size: 13px;}
+        .banner h2 span {
+            font-size: 13px;
+        }
+    }
+}
+}
+}
+}
